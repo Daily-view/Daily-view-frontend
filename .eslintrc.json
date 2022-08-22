@@ -1,0 +1,56 @@
+{
+  // eslint 파일이 루트인지
+  "root": true,
+
+  // 코드가 어디서 실행되는 환경을 설정
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": false
+  },
+
+  // 각종 플러그인들
+  "plugins": ["react", "react-hooks", "prettier", "@typescript-eslint"],
+
+  // 이미 만들어진 eslint config를 사용함
+  "extends": [
+    "airbnb",
+    "airbnb/hooks"
+    // "eslint:recommended",
+    // "plugin:react/recommended",
+    // "plugin:prettier/recommended"
+  ],
+
+  // 각종 규칙들 0이면 규칙을 끈다.
+  "rules": {
+    "react/react-in-jsx-scope": 0,
+    "react/prefer-stateless-function": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "no-nested-ternary": 0
+  },
+
+  // eslint는 순수 js만 이해하기때문에, 확장 문법을 이해하기 위해선 parser가 필요함
+  "parser": "@typescript-eslint/parser",
+
+  // parser를 사용할 때 옵션들
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+
+  // 리액트 최신 버전을 탐지하게끔 함
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+
+  // 전역 변수
+  "globals": {
+    "React": "writable"
+  }
+}
