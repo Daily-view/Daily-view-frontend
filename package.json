@@ -9,18 +9,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.9",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
+    "graphql": "^16.6.0",
     "lodash-es": "^4.17.21",
     "luxon": "^3.0.1",
     "react": "^18.2.0",
-    "react-daily-components": "^0.3.7",
+    "react-apollo": "^3.1.5",
+    "react-daily-components": "^0.5.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
-    "vite-tsconfig-paths": "^3.5.0",
     "zustand": "^4.1.1"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^2.13.1",
     "@types/lodash-es": "^4.17.6",
     "@types/luxon": "^3.0.0",
     "@types/react": "^18.0.17",
@@ -36,6 +39,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.7.1",
     "typescript": "^4.6.4",
-    "vite": "^3.0.7"
+    "vite": "^3.0.7",
+    "vite-tsconfig-paths": "^3.5.1"
   }
 }
