@@ -6,7 +6,7 @@
   "env": {
     "browser": true,
     "es6": true,
-    "node": false
+    "node": true
   },
 
   // 각종 플러그인들
@@ -14,11 +14,11 @@
 
   // 이미 만들어진 eslint config를 사용함
   "extends": [
-    "airbnb",
-    "airbnb/hooks"
-    // "eslint:recommended",
-    // "plugin:react/recommended",
-    // "plugin:prettier/recommended"
+    // "airbnb",
+    // "airbnb/hooks"
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
   ],
 
   // 각종 규칙들 0이면 규칙을 끈다.
